@@ -4,7 +4,7 @@ import java.util.ResourceBundle;
 
 public class MessageManager {
 	private ResourceBundle resourceBundle;
-	// класс извлекает информацию из файла message. properties
+	// class gets info from message. properties
 	
 	private static final String BUNDLE_NAME = "properties/messages";
 	public static final String LOGIN_ERROR_MESSAGE = "login.error.message";
