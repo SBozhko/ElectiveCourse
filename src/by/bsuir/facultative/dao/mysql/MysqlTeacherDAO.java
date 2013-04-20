@@ -160,8 +160,7 @@ public class MysqlTeacherDAO implements TeacherDAO {
 			rs = prStatement.executeQuery();
 
 			/*
-			 * проверка, существует ли пользователь с указанным логином и
-			 * паролем
+			 * checks if user exists
 			 */
 
 			if (rs.next()) {
