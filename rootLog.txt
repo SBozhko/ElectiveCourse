@@ -1,0 +1,14 @@
+INFO  Logger:Controller Date: 2012-06-08 02:14:10,351 - constructor
+DEBUG Logger:Controller Date: 2012-06-08 02:14:10,352 - init() was invoked
+INFO  Logger:Controller Date: 2012-06-08 02:14:10,354 - process request starts
+DEBUG Logger:Controller Date: 2012-06-08 02:14:10,354 - class by.bsuir.facultative.controller.Controller   loaded 
+INFO  Logger:Controller Date: 2012-06-08 02:14:10,355 - by.bsuir.facultative.controller.command.ChangeLocaleCommand@1aa85f6 was invoked
+INFO  Logger:Controller Date: 2012-06-08 02:14:11,161 - process request starts
+DEBUG Logger:Controller Date: 2012-06-08 02:14:11,162 - class by.bsuir.facultative.controller.Controller   loaded 
+INFO  Logger:Controller Date: 2012-06-08 02:14:11,164 - by.bsuir.facultative.controller.command.NoCommand@17256af was invoked
+INFO  Logger:Controller Date: 2012-06-08 02:14:12,243 - process request starts
+DEBUG Logger:Controller Date: 2012-06-08 02:14:12,243 - class by.bsuir.facultative.controller.Controller   loaded 
+INFO  Logger:Controller Date: 2012-06-08 02:14:12,243 - by.bsuir.facultative.controller.command.LoginCommand@14ce06a was invoked
+INFO  Logger:MysqlStudentDAO Date: 2012-06-08 02:14:12,703 - www@mail.ru
+INFO  Logger:MysqlStudentDAO Date: 2012-06-08 02:14:12,703 - www
+INFO  Logger:MysqlStudentDAO Date: 2012-06-08 02:14:12,704 - by.bsuir.facultative.model.Student@50c5b0
