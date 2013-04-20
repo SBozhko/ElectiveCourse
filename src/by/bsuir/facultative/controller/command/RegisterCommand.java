@@ -40,7 +40,6 @@ public class RegisterCommand implements Command {
 
 		switch (UserType.valueOf(role.toUpperCase())) {
 		case STUDENT:
-			// TODO возможно нужна фабрика
 			/*
 			 * User student = new Student(); student.setEmail(email);
 			 * student.setPassword(password); student.setFullName(fullName);
