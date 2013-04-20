@@ -112,7 +112,7 @@ public class MysqlDAOFactory extends DAOFactory {
 		return new MysqlTeacherDAO(connection);
 	}
 
-	// TODO криво. надо оптимизировать
+	// TODO refactor that!!!
 	@Override
 	public UserDAO getUserDAO(User newUser) throws DAOFactoryException, DAOException {
 		logger.debug("getUserDAO()");
