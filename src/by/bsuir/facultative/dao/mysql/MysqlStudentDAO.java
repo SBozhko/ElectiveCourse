@@ -258,11 +258,6 @@ public class MysqlStudentDAO implements StudentDAO {
 
 			rs = prStatement.executeQuery();
 
-			/*
-			 * проверка, существует ли пользователь с указанным логином и
-			 * паролем
-			 */
-
 			if (rs.next()) {
 
 				loginUser.setEmail(rs.getString(1));
