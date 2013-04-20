@@ -66,24 +66,23 @@ public class Controller extends HttpServlet implements javax.servlet.Servlet {
 		logger.debug(Controller.class + "  " + " loaded ");
 		String page = null;
 		try {
-			// определение команды, пришедшей из JSP
+			// detect command from JSP
 			Command command = requestHelper.getCommand(request);
 			/*
-			 * вызов реализованного метода execute() интерфейса Command и
-			 * передача параметров классу-обработчику конкретной команды
+			 * execute() invocation
 			 */
 			// TODO
 			logger.info(command + " was invoked");
 			page = command.execute(request, response);
-			// метод возвращает страницу ответа
+			// method returns jsp
 		} catch (ServletException e) {
 			logger.error(e);
-			// генерация сообщения об ошибке
+			// generate error message
 			request.setAttribute(
 					"errorMessage",
 					MessageManager.getInstance().getProperty(
 							MessageManager.SERVLET_EXCEPTION_ERROR_MESSAGE));
-			// вызов JSP-страницы c cообщением об ошибке
+			// jsp with error message
 			page = ConfigurationManager.getInstance().getProperty(
 					ConfigurationManager.ERROR_PAGE_PATH);
 		} catch (IOException e) {
@@ -117,7 +116,7 @@ public class Controller extends HttpServlet implements javax.servlet.Servlet {
 		// page = ConfigurationManager.getInstance().getProperty(
 		// ConfigurationManager.ERROR_PAGE_PATH);
 		// }
-		// вызов страницы ответа на запрос
+		// invoke jsp with answer
 		RequestDispatcher dispatcher = getServletContext()
 				.getRequestDispatcher(page);
 		dispatcher.forward(request, response);
