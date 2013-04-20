@@ -6,7 +6,7 @@ public class ConfigurationManager {
 	
 	private ResourceBundle resourceBundle;
 
-	// класс извлекает информацию из файла config.properties
+	// gets info from config.properties
 	private static final String BUNDLE_NAME = "properties/config";
 
 	public static final String DATABASE_DRIVER_NAME = "database.driver.name";
