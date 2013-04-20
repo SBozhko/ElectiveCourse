@@ -12,8 +12,7 @@ public class NoCommand implements Command {
 	public String execute(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		/*
-		 * в случае прямого обращения к контроллеру переадресация на страницу
-		 * ввода логина
+		 * in case of straight controller's call redirect to login page
 		 */
 		String page = ConfigurationManager.getInstance().getProperty(
 				ConfigurationManager.LOGIN_PAGE_PATH);
